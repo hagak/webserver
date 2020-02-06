@@ -38,7 +38,7 @@ The above challenge requirements do not specify the cipher character set, howeve
 ### Prerequisites
 Git
 Maven 3.6.3+
-Java8
+Java8 JDK
 
 ### Installing
 1. Clone the repository local
