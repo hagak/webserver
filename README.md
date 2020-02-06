@@ -1,17 +1,17 @@
 # JAVA based Webserver for Code Challenge
 
 This project is for a Code Challenge to develop a simple Webserver with the following requirements:
-The webserver should run on port 23456.
-❏ The webserver has an endpoint at /api/encode.
-❏ This endpoint should accept post requests.
-❏ This endpoint expects a JSON string to be received. The JSON structure should
+* The webserver should run on port 23456.
+* The webserver has an endpoint at /api/encode.
+* This endpoint should accept post requests.
+* This endpoint expects a JSON string to be received. The JSON structure should
 have two keys.
-❏ The JSON structure should have a key Shift. It’s value should be an
+* The JSON structure should have a key Shift. It’s value should be an
 integer.
-❏ The JSON structure should have a key Message. It’s value should be a
+* The JSON structure should have a key Message. It’s value should be a
 string.
 
-❏ When the JSON payload is received, it should encode the provided message
+* When the JSON payload is received, it should encode the provided message
 using the shift cipher method. If multiple words are provided, spaces should be
 retained.
 - The shift cipher works by shifting each letter a given number of letters to
@@ -26,11 +26,14 @@ would be generated as “vjg gcing jcu ncpfgf”.
 Message = “the eagle has landed”, the encoded message would be
 generated as “vjg gcing jcu ncpfgf”.
 
-❏ When the message is successfully encoded, it should be stored in a file on disk.
-❏ The endpoint should return a 200 if successful, 500 if unsuccessful.
-❏ The endpoint should return a json object with a single key EncodedMessage.
+* When the message is successfully encoded, it should be stored in a file on disk.
+* The endpoint should return a 200 if successful, 500 if unsuccessful.
+* The endpoint should return a json object with a single key EncodedMessage.
 The value returned should be the string you successfully encoded. If
 unsuccessful, it should return an empty string.
+
+### Challenge Assumptions
+The above challenge requirements do not specify the cipher character set, however based on the examples given it is assumed to be a 26 character set starting from lowercase 'a' and ending at lowercase 'z'.  Due to this requirement no other character can be encoded, as such this application will throw an exception if any characters other than a through z or a space is provided.  I did pre-process the data to lowercase the input such that it will handle captipal letters without throwing an exception.
 
 ### Prerequisites
 Git
