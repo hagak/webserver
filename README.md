@@ -41,8 +41,13 @@ Maven 3.6.3+
 Java8 JDK
 
 ### Installing
-1. Clone the repository local
+1. Clone the repository - git clone https://github.com/hagak/webserver.git
 2. Switch to the project directory
 3. Issue 'mvn clean package' to build the jar file
 4. Change directories to the <project>/target/ directory
-5. Launch the server with 'java -jar XXXXXX'
+5. Launch the server with 'java -jar webserver-1.0-SNAPSHOT-jar-with-dependencies.jar'
+
+### Testing
+1. Create a JSON file to test following the requirements above
+2. Execute 'curl -d @<json file> -X POST http://127.0.0.1:23456/api/encode
+3. The encoded message will be returned and a file named "cipher.txt" will be created in the same path as the path you launched the jar file from, most likely the target folder
