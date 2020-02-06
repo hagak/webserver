@@ -48,6 +48,6 @@ Java8 JDK
 5. Launch the server with 'java -jar webserver-1.0-SNAPSHOT-jar-with-dependencies.jar'
 
 ### Testing
-1. Create a JSON file to test following the requirements above
+1. Create a JSON file to test following the requirements above.  message.json is provide in the repo for testing
 2. Execute 'curl -d @<json file> -X POST http://127.0.0.1:23456/api/encode
 3. The encoded message will be returned and a file named "cipher.txt" will be created in the same path as the path you launched the jar file from, most likely the target folder
