@@ -14,15 +14,15 @@ string.
 * When the JSON payload is received, it should encode the provided message
 using the shift cipher method. If multiple words are provided, spaces should be
 retained.
-- The shift cipher works by shifting each letter a given number of letters to
+* The shift cipher works by shifting each letter a given number of letters to
 the right in alphabet order. The letter A shifted 1 would be B. B shifted 2
 would be D.
-- If Shift = 3 and Message = “dad”, the encoded message would be
+* If Shift = 3 and Message = “dad”, the encoded message would be
 generated as “gdg”.
 
-- If Shift = 2 and Message = “the eagle has landed”, the encoded message
+* If Shift = 2 and Message = “the eagle has landed”, the encoded message
 would be generated as “vjg gcing jcu ncpfgf”.
-- This should work for any positive shift value provided. If Shift = 522 and
+* This should work for any positive shift value provided. If Shift = 522 and
 Message = “the eagle has landed”, the encoded message would be
 generated as “vjg gcing jcu ncpfgf”.
 
