@@ -11,3 +11,9 @@ target/classes/org/thetank/webserver/WebserverException.class
 .project
 .classpath
 cipher.txt
+target/webserver-1.0-SNAPSHOT-jar-with-dependencies.jar
+target/webserver-1.0-SNAPSHOT.jar
+target/classes/org/thetank/webserver/Webserver$1.class
+target/maven-archiver/pom.properties
+target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
