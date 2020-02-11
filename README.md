@@ -36,9 +36,9 @@ unsuccessful, it should return an empty string.
 The above challenge requirements do not specify the cipher character set, however based on the examples given it is assumed to be a 26 character set starting from lowercase 'a' and ending at lowercase 'z'.  Due to this requirement no other character can be encoded, as such this application will throw an exception if any characters other than a through z or a space is provided.  I did pre-process the data to lowercase the input such that it will handle captipal letters without throwing an exception.
 
 ### Prerequisites
-Git
-Maven 3.6.3+
-Java8 JDK
+* Git
+* Maven 3.6.3+
+* Java8 JDK
 
 ### Installing
 1. Clone the repository - git clone https://github.com/hagak/webserver.git
